@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long t;
+    cin >> t;
+
+    long long cycle_start = 3;
+
+    while (t > cycle_start) {
+        t -= cycle_start;
+        cycle_start *= 2;
+    }
+
+    cout << cycle_start - t + 1 << endl;
+    return 0;
+}
